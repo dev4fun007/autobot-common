@@ -29,3 +29,11 @@ type OrderService interface {
 	ExecuteMarketOrder(order RequestMarketOrder)
 	ExecuteLimitOrder(order RequestLimitOrder)
 }
+
+type WorkerRegistryService interface {
+	GetActiveWorkers() map[string]Worker
+	GetRegisteredWorker(configName string, strategyType StrategyType) Worker
+	RegisterConfigWorker(worker Worker, strategyType StrategyType)
+	UpdateConfigWorkerRegistry(worker Worker, strategyType StrategyType)
+	RemoveConfigWorkerFromRegistry(name string, strategyType StrategyType)
+}
