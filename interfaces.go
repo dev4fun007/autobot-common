@@ -37,3 +37,12 @@ type WorkerRegistryService interface {
 	UpdateConfigWorkerRegistry(worker Worker, strategyType StrategyType)
 	RemoveConfigWorkerFromRegistry(name string, strategyType StrategyType)
 }
+
+type Repository interface {
+	Save(ctx context.Context, value interface{}) error
+	SaveAll(ctx context.Context, value []interface{}) error
+	Update(ctx context.Context, filter interface{}, value interface{}) error
+	Delete(ctx context.Context, filter interface{}) error
+	Get(ctx context.Context, filter interface{}) (interface{}, error)
+	GetAllByStrategyType(ctx context.Context, filter interface{}) []interface{}
+}
