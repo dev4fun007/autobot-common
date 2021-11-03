@@ -44,5 +44,5 @@ type Repository interface {
 	Update(ctx context.Context, filter interface{}, value interface{}) error
 	Delete(ctx context.Context, filter interface{}) error
 	Get(ctx context.Context, filter interface{}) (interface{}, error)
-	GetAllByStrategyType(ctx context.Context, filter interface{}) []interface{}
+	GetAllByFilter(ctx context.Context, filter interface{}) []interface{}
 }
