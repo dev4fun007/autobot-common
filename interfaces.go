@@ -35,7 +35,7 @@ type OrderService interface {
 }
 
 type WorkerRegistryService interface {
-	GetActiveWorkers() map[string]Worker
+	GetActiveWorkers() map[string][]Worker
 	GetRegisteredWorker(configName string, strategyType StrategyType) Worker
 	RegisterConfigWorker(worker Worker, strategyType StrategyType)
 	UpdateConfigWorkerRegistry(worker Worker, strategyType StrategyType)
