@@ -5,8 +5,13 @@ import (
 )
 
 type TickerData struct {
-	Value     float64
-	Timestamp time.Time
+	Market       string `json:"market"`
+	Change24Hour string `json:"change_24_hour"`
+	High         string `json:"high"`
+	Low          string `json:"low"`
+	Volume       string `json:"volume"`
+	LastPrice    string `json:"last_price"`
+	Timestamp    time.Time
 }
 
 type BaseConfig struct {
