@@ -16,6 +16,7 @@ type TickerData struct {
 
 type BaseConfig struct {
 	Name         string       `json:"name" bson:"name"`
+	Market       string       `json:"market" bson:"market"`
 	IsActive     bool         `json:"is_active" bson:"is_active"`
 	StrategyType StrategyType `json:"strategy_type" bson:"strategy_type"`
 }
