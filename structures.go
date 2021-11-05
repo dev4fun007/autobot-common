@@ -11,7 +11,7 @@ type TickerData struct {
 	Low          string `json:"low"`
 	Volume       string `json:"volume"`
 	LastPrice    string `json:"last_price"`
-	Timestamp    time.Time
+	Timestamp    int    `json:"timestamp"`
 }
 
 type BaseConfig struct {

@@ -10,6 +10,10 @@ type Worker interface {
 	GetDataChannel() chan<- TickerData
 }
 
+type TickerPublisher interface {
+	Publish([]TickerData)
+}
+
 type BrokerAction interface {
 	GetBrokerName() string
 	ExecuteMarketOrder(order RequestMarketOrder) (Order, error)
