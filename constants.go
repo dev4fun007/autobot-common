@@ -21,3 +21,5 @@ const (
 	MarketOrder OrderType = "MARKET_ORDER"
 	LimitOrder  OrderType = "LIMIT_ORDER"
 )
+
+type StrategyType string
