@@ -12,6 +12,7 @@ type Worker interface {
 
 type TickerPublisher interface {
 	Publish([]TickerData)
+	StartFanOutService(ctx context.Context)
 }
 
 type BrokerAction interface {
