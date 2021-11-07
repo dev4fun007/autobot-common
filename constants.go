@@ -7,23 +7,13 @@ const (
 type ActionType string
 
 const (
+	Wait     ActionType = "WAIT"
+	Hold     ActionType = "HOLD"
 	Buy      ActionType = "BUY"
 	Sell     ActionType = "SELL"
 	BuyOnce  ActionType = "BUY_ONCE"
 	SellOnce ActionType = "SELL_ONCE"
-
-	Wait ActionType = "WAIT"
-	Hold ActionType = "HOLD"
 )
-
-type StrategyType string
-
-const (
-	InvalidStrategy         StrategyType = "INVALID_STRATEGY"
-	SimpleSupportResistance StrategyType = "SIMPLE_SUPPORT_RESISTANCE"
-)
-
-var StrategyTypeList = [...]StrategyType{SimpleSupportResistance}
 
 type OrderType string
 
