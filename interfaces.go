@@ -33,7 +33,7 @@ type StrategyInternalService interface {
 	CreateStrategy(context.Context, []byte, WorkerRegistryService, Repository) error
 	UpdateStrategy(context.Context, string, []byte, WorkerRegistryService, Repository) error
 	GetStrategiesByType(context.Context, Repository) ([]byte, error)
-	GetStrategyByNameAndType(context.Context, string, WorkerRegistryService, Repository) ([]byte, error)
+	GetStrategyByNameAndType(context.Context, string, Repository) ([]byte, error)
 	DeleteStrategyByNameAndType(context.Context, string, WorkerRegistryService, Repository) error
 }
 
