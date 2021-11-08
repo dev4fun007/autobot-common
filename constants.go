@@ -23,3 +23,7 @@ const (
 )
 
 type StrategyType string
+
+const (
+	InvalidStrategy StrategyType = "INVALID_STRATEGY"
+)
