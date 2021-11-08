@@ -52,7 +52,7 @@ type WorkerRegistryService interface {
 }
 
 type ConfigStateUpdater interface {
-	UpdateConfig(ctx context.Context, filter interface{}, value interface{}) error
+	UpdateConfig(ctx context.Context, name string, strategyType StrategyType, value interface{}) error
 }
 
 type Repository interface {
