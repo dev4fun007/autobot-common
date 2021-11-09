@@ -35,6 +35,7 @@ type StrategyInternalService interface {
 	DeleteStrategyByNameAndType(context.Context, string, WorkerRegistryService, Repository) error
 	UpdateStrategy(context.Context, string, []byte, WorkerRegistryService, Repository) error
 	CreateStrategy(context.Context, []byte, WorkerRegistryService, Repository, OrderService, ConfigStateUpdater) error
+	RestartWorkers(context.Context, interface{}, WorkerRegistryService, Repository, OrderService, ConfigStateUpdater) error
 }
 
 type OrderService interface {
