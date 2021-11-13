@@ -23,6 +23,7 @@ type BaseConfig struct {
 
 type RequestMarketOrder struct {
 	Quantity   float64
+	LastPrice  float64 // For calculation purpose
 	Market     string
 	Config     BaseConfig
 	OrderType  OrderType
