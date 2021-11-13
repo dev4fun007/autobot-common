@@ -5,14 +5,14 @@ import (
 )
 
 type TickerData struct {
-	Market       string  `json:"market"`
-	Change24Hour string  `json:"change_24_hour"`
-	High         string  `json:"high"`
-	Low          string  `json:"low"`
-	Volume       string  `json:"volume"`
-	LastPrice    string  `json:"last_price"`
-	Timestamp    int     `json:"timestamp"`
-	lastPrice    float64 // private field for LastPrice converted to float
+	Market              string  `json:"market"`
+	Change24Hour        string  `json:"change_24_hour"`
+	High                string  `json:"high"`
+	Low                 string  `json:"low"`
+	Volume              string  `json:"volume"`
+	LastPrice           string  `json:"last_price"`
+	Timestamp           int     `json:"timestamp"`
+	LastPriceCalculated float64 // private field for LastPrice converted to float
 }
 
 type BaseConfig struct {
