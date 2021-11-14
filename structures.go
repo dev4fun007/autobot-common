@@ -69,6 +69,5 @@ type OrderEvent struct {
 	StrategyType StrategyType `json:"strategy_type" bson:"strategy_type"`
 	Action       ActionType   `json:"action" bson:"action"`
 	TotalAmount  float64      `json:"total_amount" bson:"total_amount"`
-	Profit       float64      `json:"profit" bson:"profit"`
 	EventError   string       `json:"event_error" bson:"event_error"`
 }
